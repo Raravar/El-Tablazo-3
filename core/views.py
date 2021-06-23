@@ -15,3 +15,7 @@ def mixta(request):
     return render(request, 'core/mixta.html')  
 def registro(request):
     return render(request, 'core/registro.html')
+def listado(request):
+    return render(request, 'core/listado.html')
+def modificar(request):
+    return render(request, 'core/modificar.html')

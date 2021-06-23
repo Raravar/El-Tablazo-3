@@ -16,45 +16,50 @@
 
 <body>
     <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light" style=>
-              <div class="container">
-                <a class="navbar-brand" href="#">Menú</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Productos
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="{% url 'salada' %}">Tabla salada</a></li>
-                        <li><a class="dropdown-item" href="{% url 'dulce' %}">Tabla dulce</a></li>
-                        <li><a class="dropdown-item" href="{% url 'mixta' %}">Tabla mixta</a></li>
-                      </ul>
-                    <li class="nav-item">
-                      <a class="nav-link active" href="{% url 'about' %}">Quienes somos</a>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="{% url 'contacto' %}">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="{% url 'registro' %}">Registro clientes</a>
-                    </li>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style=>
+          <div class="container">
+            <a class="navbar-brand" href="#">Menú</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Productos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="{% url 'salada' %}">Tabla salada</a></li>
+                    <li><a class="dropdown-item" href="{% url 'dulce' %}">Tabla dulce</a></li>
+                    <li><a class="dropdown-item" href="{% url 'mixta' %}">Tabla mixta</a></li>
                   </ul>
-      
-      
-                </div>
-              </div>
-            </nav>
+                <li class="nav-item">
+                  <a class="nav-link active" href="{% url 'about' %}">Quienes somos</a>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{% url 'contacto' %}">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Datos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="{% url 'registro' %}">Registro</a></li>
+                    <li><a class="dropdown-item" href="{% url 'listado' %}">Listado</a></li>
+  
+                  </ul>
+              </ul>
+            </div>
           </div>
+        </nav>
+      </div>
     </header>
 
     <div class="container">
