@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'ElTablazo3.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
-        'NAME': '127.0.0.1:1521/xe',
-        'USER': 'C##prueba',
+        'NAME': '127.0.0.1:1521/orcl',
+        'USER': 'prueba',
         'PASSWORD': 'prueba',
         'TEST': {
             'USER': 'default_test',
