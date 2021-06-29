@@ -1,7 +1,6 @@
-from core.models import Pais, Proveedor
+from core.models import Proveedor
 from django.contrib import admin
-from .models import Pais, Proveedor
+from .models import Proveedor
 
 # Register your models here.
-admin.site.register(Pais)
 admin.site.register(Proveedor)
